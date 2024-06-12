@@ -27,8 +27,3 @@ directive @goModel(
     models: [String!]
     forceGenerate: Boolean
 ) on OBJECT | INPUT_OBJECT | SCALAR | ENUM | INTERFACE | UNION
-
-type Person @goModel(forceGenerate: true) {
-    id: ID!
-    name: String!
-}
