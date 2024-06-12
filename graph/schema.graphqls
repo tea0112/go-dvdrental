@@ -21,9 +21,3 @@ input NewCategory {
 type Mutation {
     createCategory(input: NewCategory!): Category!
 }
-
-directive @goModel(
-    model: String
-    models: [String!]
-    forceGenerate: Boolean
-) on OBJECT | INPUT_OBJECT | SCALAR | ENUM | INTERFACE | UNION
